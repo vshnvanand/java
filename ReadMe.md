@@ -65,6 +65,14 @@ static method vs instance method
 - No object is required to interact with it 
 - Since there is no object differentiation there is no need to using this keyword
 
+- A static method in Java is associated with the class, not with any object or instance.
+- It can be accessed by all instances of the class, but it does not rely on any specific instance.
+- Static methods can access static variables directly without the need for an object.
+- They cannot access non-static variables (instance) or methods directly.
+    - `Non-static data members or non-static methods cannot be used by static methods, and static methods cannot call non-static methods directly. `
+    - `In a static environment, this and super are not allowed to be used.`
+- Static methods can be accessed directly in both static and non-static contexts.
+
 ## Instance method 
 - Are object method can only be used when there is a object of that class
 - common for all the objects of the that class not like other variables are new but not static
@@ -73,8 +81,29 @@ static method vs instance method
 # Access Modifier
 
 Define the boundaries of the methods, class and variables
-Public - 
+Public - Khulli khitab
 Protected - 
 Private - Only accessable in that particular class // principle of encapsulation
 Default - Only same package
 
+----------------------------------------------------------------------------------------
+# Varargs
+
+Note : one method can only have 1 varargs
+- The varargs should be declared at the end not in the starting 
+- Varargs method can also run without no input 
+- whne a varargs is sent it actaully sent as an array no need to mention explicitly 
+
+----------------------------------------------------------------------------------------
+
+- Getter : Accessor method
+- Setter : Mutator method 
+
+![alt text](image.png)
+
+Jagged array means inappropriate number of rows and cols like one row having 3 cols and other have 2 or 1
+like :
+1 2
+3 4 5
+6
+7 8 9 10
